@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Quiz Game by Nikesh</title>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body class="body1">
+	<nav id="upper">
+		<img src="path6076.png" width="40px">
+		<marquee>
+			<h1>Welcome to Quiz Game</h1>
+		</marquee>
+	</nav>
+	<div id="information">
+		<div></i>
+			<h1>Quiz Game</h1>
+			<form id="userform">
+				<label for="first-name" s>First Name:</label>
+
+				<input type="text" id="firstname" value="" required>
+
+				<label for="last-name">Last Name:</label>
+				<input type="text" id="lastname" value="" required>
+
+				<label for="dob">Date of Birth:</label>
+				<input type="date" id="dob" value="" required>
+
+				<label for="gender">Gender:</label>
+				<select id="gender" required>
+					<option value="">-- Select Gender --</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+				<label for="branch">Branch:</label>
+				<select id="branch" required>
+					<option value="">-- Select Branch --</option>
+					<option value="electronic">Electronic</option>
+					<option value="mechanical">Mechanical</option>
+					<option value="civil">Civil</option>
+				</select>
+
+
+				<label for="phone">Phone:</label>
+				<input type="number" id="phone" required>
+
+
+				<button id="submit" onclick="nik()">Start Quiz</button>
+			</form>
+		</div>
+		<div id="information4">
+			<div id="information1">
+				<h4>Welcome to the Quiz game website, brought to you by Nikesh Bawankar! Our unique game is
+					designed to test your knowledge and skills in mechanical, electronic, or civil engineering. To get
+					started, simply fill out our registration form with your details and choose your preferred branch.
+				</h4>
+			</div>
+
+			<div id="information2">
+				<h4>Once you've registered, we'll present you with five challenging questions based on your chosen
+					branch. Each question is worth two points, so a perfect score is 10 points. You'll have to think
+					fast and answer correctly to earn the highest score possible!</h4>
+			</div>
+
+			<div id="information3">
+				<h4>Our quiz game is perfect for anyone who loves engineering or wants to test their knowledge. Plus,
+					it's a fun and engaging way to learn more about your chosen field. So, what are you waiting for?
+					Register now and see if you have what it takes to be an engineering expert!</h4>
+			</div>
+		</div>
+
+		
+	</div>
+
+
+	<div id="question">
+		<h1 class="Qtitle">Quiz Game</h1>
+		<br>
+		<br>
+
+
+		<ol>
+
+			<li>
+
+				<p class="que1" align="center" id="Q1">Please click on Next</p>
+				<div class="q1o1" id="O1" onclick="OptionA()" align="center">-----</div>
+				<label class="q1o2" align="center" id="O2" onclick="OptionB()">-----</label>
+				<label class="q1o3" align="center" id="O3" onclick="OptionC()">-----</label>
+				<label class="q1o4" align="center" id="O4" onclick="OptionD()">-----</label>
+				<div class="nextQue" id="nextQue1" align="center" onclick="nextQUE()">next</div>
+				<div class="previousQue" id="previousQue1" align="center" onclick="prevQUE()">previous</div>
+			</li>
+		</ol>
+		<button id="ansSubmit" align="center" onclick="result()"> Submit </button>
+
+	</div>
+	<div id="result" align="center"> <br>
+		<p>
+		<H3>RESULT</H3>
+		</p><br>
+		<hr>
+		<br>
+		NAME:<label id="Ans1">-----</label>
+		<br>
+		<br->
+			CORRECT ANSWERS:<label id="Ans2">-----</label>
+			WRONG ANSWERS:<label id="Ans3">-----</label>
+			TOTAL SCORE OUTOFF 10:<label id="Ans4">-----</label><br>
+
+			<hr>
+			<br>
+			<label id="Ans6">
+				<h4>THANK YOU FOR PLAYING!</h4>
+			</label>
+	</div>
+
+
+	<div class="bottom1">
+		
+		<div align="center" width="100%">
+
+		</div>
+		<div width="100%" height="70px">
+			<p id="madewith">Made with <img src="heart.png" width="15px" id="dil"> By Nikesh  & Tejas !!!</p>
+		</div>
+		<div width="100%" height="70px">
+			<p id="info" align="center"> Address: bire lay-out ,nachangaon road ,pulgoan 442302 <br>Email : nikeshbawankar1921@gmail.com<br>Contact : 7709213908</p>
+		</div>
+		<div align="center" width="100%">
+			<a href="https://instagram.com/creative_person_21?igshid=ZDdkNTZiNTM=" ><img src="instagram.jpg" width="50px" id="insta"><p id="instagram">INSTAGRAM</p></a>
+		</div>
+		<div align="center" width="100%">
+			<a href="https://www.facebook.com/abhi.bavane.5"> <img src="facebook.png" width="50px" id="face"><p id="facebook">FACEBOOK</p></a>
+		</div>
+		<div id="qr"><p id="scanqr">SCAN QR TO DOWNLOAD THE APP</p></div>
+		
+		
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+	<script src="data.js"></script>
+
+
+</body>
+
+</html>
