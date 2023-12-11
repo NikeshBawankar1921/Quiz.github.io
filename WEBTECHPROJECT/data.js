@@ -1,5 +1,12 @@
 const firebaseConfig = {
-  //* SORRY CANT PROVIDE YOU THE DATA BASE CONFIGURATION 
+  apiKey: "AIzaSyCOzjcZCJBgA1R0go8bzeEPKN-EWLGR2P0",
+  authDomain: "first-project2021.firebaseapp.com",
+  databaseURL: "https://first-project2021-default-rtdb.firebaseio.com",
+  projectId: "first-project2021",
+  storageBucket: "first-project2021.appspot.com",
+  messagingSenderId: "124082926204",
+  appId: "1:124082926204:web:9e51a6ebc6e9a144708ff9",
+  measurementId: "G-FVGYVS7GJJ"
   };
 
   firebase.initializeApp(firebaseConfig);
